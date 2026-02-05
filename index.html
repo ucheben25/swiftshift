@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiftShip — Reliable Shipment & Tracking</title>
+  <meta name="description" content="SwiftShip delivers and tracks your packages worldwide. Fast, secure, transparent.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">◆</span>
+        <span>SwiftShip</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#tracking">Track</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Ship it. <span class="highlight">Track it.</span> Delivered.
+          </h1>
+          <p class="hero-subtitle">
+            Reliable logistics and real-time tracking for businesses and individuals. Domestic and international.
+          </p>
+          <div class="hero-actions">
+            <a href="#tracking" class="btn btn-primary">Track a shipment</a>
+            <a href="#services" class="btn btn-secondary">View services</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>2M+</strong> packages delivered</div>
+            <div class="stat"><strong>150+</strong> countries</div>
+            <div class="stat"><strong>24/7</strong> tracking</div>
+          </div>
+        </div>
+        <div class="hero-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=85"
+            alt="Shipping containers at port — global logistics"
+            class="hero-img"
+            width="540"
+            height="360"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title">What we offer</h2>
+        <p class="section-subtitle">Choose the right option for your needs</p>
+        <div class="section-img-wrap section-img-wrap--wide">
+          <img
+            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=85"
+            alt="Modern distribution center — warehouse and logistics operations"
+            class="section-img"
+            width="1100"
+            height="380"
+            loading="lazy"
+          >
+        </div>
+        <div class="services-grid">
+          <article class="card">
+            <div class="card-icon">📦</div>
+            <h3>Standard shipping</h3>
+            <p>Cost-effective delivery with full tracking. Ideal for non-urgent parcels.</p>
+            <a href="#contact" class="card-link">Get a quote →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Express delivery</h3>
+            <p>Priority handling and faster transit. Perfect when time matters.</p>
+            <a href="#contact" class="card-link">Get a quote →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">🌍</div>
+            <h3>International</h3>
+            <p>Door-to-door worldwide with customs support and tracking.</p>
+            <a href="#contact" class="card-link">Get a quote →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">🏢</div>
+            <h3>Business solutions</h3>
+            <p>Bulk rates, API integration, and dedicated account managers.</p>
+            <a href="#contact" class="card-link">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-it-works">
+      <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <div class="section-img-wrap section-img-wrap--standard">
+          <img
+            src="https://images.unsplash.com/photo-1605745341112-85968b19335b?w=1200&q=85"
+            alt="Professional delivery fleet — last-mile logistics"
+            class="section-img"
+            width="1100"
+            height="420"
+            loading="lazy"
+          >
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">1</span>
+            <h3>Book</h3>
+            <p>Enter details online or via our app. Get an instant quote.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <h3>Ship</h3>
+            <p>We pick up or you drop off. Your package is on its way.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <h3>Track</h3>
+            <p>Follow every step in real time until delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracking" class="section tracking-section">
+      <div class="container">
+        <h2 class="section-title">Track your shipment</h2>
+        <p class="section-subtitle">Enter your tracking number to see status and location</p>
+        <div class="tracking-box">
+          <form class="tracking-form" id="tracking-form">
+            <input
+              type="text"
+              id="tracking-input"
+              class="tracking-input"
+              placeholder="e.g. SS-123456789"
+              autocomplete="off"
+            >
+            <button type="submit" class="btn btn-primary">Track</button>
+          </form>
+          <div id="tracking-result" class="tracking-result" aria-live="polite" hidden>
+            <div class="tracking-result-inner">
+              <div class="tracking-status-bar">
+                <span class="status-badge" id="status-badge">In transit</span>
+                <span class="tracking-id-display" id="tracking-id-display"></span>
+              </div>
+              <div class="tracking-timeline" id="tracking-timeline"></div>
+              <p class="tracking-hint">This is a demo. Use any tracking ID (e.g. SS-123456789) to see sample status.</p>
+            </div>
+          </div>
+          <div id="tracking-error" class="tracking-error" aria-live="polite" hidden>
+            <p>Please enter a tracking number.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <p class="about-eyebrow">About us</p>
+        <h2 class="section-title about-title">Trusted logistics partner worldwide</h2>
+        <p class="about-lead">
+          We started with a simple idea: shipping should be transparent and stress-free. Today we move millions of packages every year, with real-time tracking and customer support you can count on. Our network spans 150+ countries, serving businesses of all sizes and individuals who need reliable delivery.
+        </p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="about-stat-num">15+</span>
+            <span class="about-stat-label">Years in logistics</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">2M+</span>
+            <span class="about-stat-label">Packages delivered</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">150+</span>
+            <span class="about-stat-label">Countries served</span>
+          </div>
+        </div>
+        <div class="about-commitment">
+          <h3 class="about-commitment-title">Our commitment</h3>
+          <ul class="about-list">
+            <li>Real-time tracking for every shipment</li>
+            <li>Dedicated support team</li>
+            <li>Secure handling and insurance options</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="section-subtitle">Request a quote or ask us anything</p>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <strong>Email</strong>
+              <a href="mailto:hello@swiftship.example">hello@swiftship.example</a>
+            </div>
+            <div class="contact-item">
+              <strong>Phone</strong>
+              <a href="tel:+18005551234">+1 800 555 1234</a>
+            </div>
+            <div class="contact-item">
+              <strong>Address</strong>
+              <span>123 Logistics Way, Suite 400, Your City</span>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" required>
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" required>
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">◆</span>
+          <span>SwiftShip</span>
+        </a>
+        <p>Reliable shipment and tracking worldwide.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#tracking">Track</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 SwiftShip. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
